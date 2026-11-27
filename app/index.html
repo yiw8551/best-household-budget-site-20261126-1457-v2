@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeTally — the Okafor family budget</title>
+<meta name="description" content="HomeTally keeps one household's money in one calm place: budget, bills, spending and savings goals for the Okafor family.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#/overview" aria-label="HomeTally home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="3" width="34" height="34" rx="9" fill="#177E6C"/><path d="M11 21.5 20 13l9 8.5" stroke="#FAF5EC" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 20.5V29h11v-8.5" stroke="#FAF5EC" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="24.6" r="2.1" fill="#E9A13B"/></svg>
+      <span class="brand-name">HomeTally</span>
+    </a>
+    <p class="brand-tag">The Okafor family's money, in one calm place.</p>
+    <div class="month-pill" id="month-pill">November 2026</div>
+  </div>
+  <nav class="mainnav" id="mainnav" aria-label="Main">
+    <a href="#/overview" data-route="overview">Overview</a>
+    <a href="#/budget" data-route="budget">Budget</a>
+    <a href="#/transactions" data-route="transactions">Transactions</a>
+    <a href="#/bills" data-route="bills">Bills</a>
+    <a href="#/goals" data-route="goals">Goals</a>
+    <a href="#/insights" data-route="insights">Insights</a>
+  </nav>
+</header>
+
+<main id="app">
+  <section class="page" id="page-overview" aria-label="Overview"></section>
+  <section class="page" id="page-budget" aria-label="Budget planner" hidden></section>
+  <section class="page" id="page-transactions" aria-label="Transactions" hidden></section>
+  <section class="page" id="page-bills" aria-label="Bills and schedule" hidden></section>
+  <section class="page" id="page-goals" aria-label="Savings goals" hidden></section>
+  <section class="page" id="page-insights" aria-label="Insights and reports" hidden></section>
+</main>
+
+<footer class="sitefoot">
+  <p><strong>HomeTally</strong> is the Okafor family's own budget book — Maya, Daniel, Zoe (9) and Eli (6), at 14 Maple Court.
+  Every figure on these pages is the family's real November 2026 money, kept in this browser and nowhere else.</p>
+  <p class="foot-links"><a href="#/budget">Plan December</a> · <a href="#/bills">See what's due</a> · <a href="#/goals">Top up a goal</a></p>
+</footer>
+
+<script src="/data.js"></script>
+<script src="/format.js"></script>
+<script src="/charts.js"></script>
+<script src="/views.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
